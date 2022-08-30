@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); */
+/* font-family: 'Orbitron', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:visited {
+    color: #555;
+}
+
+/* COMMON */
+body.member_1 {
+    background-color: #377D71;
+}
+
+body.member_2 {
+    background-color: #FBA1A1;
+}
+
+body.member_3 {
+    background-color: #8879B0;
+}
+
+/* WRAP */
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 340px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* MENU */
+/* .wrap .menu {
+    border: 1px solid black;
+} */
+
+.wrap .menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrap .menu a {
+    font-size: 20px;
+    color: #666;
+}
+
+.wrap .menu a:first-child {
+    float: left;
+}
+
+.wrap .menu a:last-child {
+    float: right;
+}
+
+/* PROFILE */
+.wrap .profile {
+    width: 100%;
+    text-align: center;
+}
+
+.wrap .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 15px 30px #377D71;
+}
+
+body.member_2 .wrap .profile img {
+    box-shadow: 5px 15px 30px #FBA1A1;
+}
+
+body.member_3 .wrap .profile img {
+    box-shadow: 5px 15px 30px #8879B0;
+}
+
+.wrap .profile h1 {
+    font: bold 22px/1 "Fredoka One";
+    /* line height 한번에 처리. 글자크기와 동일할 때 /1 */
+    color: #555;
+    margin: 20px 0px 10px 0px;
+}
+
+.wrap .profile p {
+    font: 14px/1 "Fredoka One";
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.wrap .profile .btn_view {
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0px auto 20px;
+    background-color: #377D71;
+    font: bold 12px/32px "Fredoka One";
+    color: white;
+    border-radius: 16px;
+    box-shadow: 5px 10px 20px #377D71;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+body.member_2 .wrap .profile .btn_view {
+    background-color: #FBA1A1;
+    box-shadow: 5px 10px 20px #FBA1A1;
+}
+
+body.member_3 .wrap .profile .btn_view {
+    background-color: #8879B0;
+    box-shadow: 5px 10px 20px #8879B0;
+}
+
+
+/* CONTACT */
+.wrap .contact {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.wrap .contact li {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 2px solid #eee;
+}
+
+.wrap .contact li:last-child {
+    border-bottom: none;
+}
+
+.wrap .contact li i {
+    width: 20%;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #ddd;
+}
+
+.wrap .contact li span {
+    font: 13px/1 "Fredoka One";
+    color: #555;
+    letter-spacing: 1px;
+}
+
+/* OTHERS */
+
+.wrap .others {
+    text-align: center;
+    font-size: 0px;
+    /* inline 요소 사이 엔터가 공백으로 인식되는 것을 막음 */
+}
+
+.wrap .others a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    opacity: 0.4;
+}
+
+.wrap .others a.on {
+    opacity: 1;
+}
+
+.wrap .others a:nth-of-type(1) {
+    background-color: #377D71;
+    box-shadow: 5px 5px 10px #377D71;
+}
+
+.wrap .others a:nth-of-type(2) {
+    background-color: #FBA1A1;
+    box-shadow: 5px 5px 10px #FBA1A1;
+}
+
+.wrap .others a:nth-of-type(3) {
+    background-color: #8879B0;
+    box-shadow: 5px 5px 10px #8879B0;
+}
